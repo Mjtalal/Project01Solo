@@ -1,11 +1,11 @@
-/* Reset default browser styles */
-body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+
+body, h1, h2, h3, h4, p, ul, li, form, input, textarea, button {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Global styles */
+
 body {
     background-color: #f0f0f0;
     color: #333;
