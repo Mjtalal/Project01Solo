@@ -18,36 +18,26 @@
     </ul>
 </nav>
 <header>
-    
+    <!-- Banner Image/GIF -->
     <img src="resources/tree.jpg" alt="Banner Image">
 </header>
 <div class="sidebar">
-
     <div class="portlet">
         <h3>Current Date and Time</h3>
         <p id="currentDateTime"></p>
     </div>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-
             var currentDateTimeElement = document.getElementById('currentDateTime');
-
-
             function updateCurrentDateTime() {
                 var currentDate = new Date();
                 var formattedDateTime = currentDate.toLocaleString();
                 currentDateTimeElement.textContent = formattedDateTime;
             }
-
-
             updateCurrentDateTime();
-
-
             setInterval(updateCurrentDateTime, 1000);
         });
     </script>
-
     <div class="portlet">
         <h3>Contact Form</h3>
         <form
@@ -66,14 +56,41 @@
             </label>
             <br>
             <br>
-
             <button type="submit">Send</button>
         </form>
     </div>
 </div>
 <main>
     <!-- Content Area -->
-    <h2>You will find any clubs I join in the future here!</h2>
+    </head>
+    <h4>My Photo Album</h4>
+    <table>
+        <tr>
+            <th>Photo</th>
+            <th>Date</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><img src="resources/vacation1.jpg" height="179" width="198" alt="RDJ"/> </td>
+            <td>Jul 27, 2019</td>
+            <td>View from top of mountain in Brazil, Rio De Janeiro</td>
+        </tr>
+
+        <tr>
+            <td><img src="resources/vacation2.jpg" height="173" width="197" alt="Saudi"/></td>
+            <td>Feb 20, 2017</td>
+            <td>The beachfront in Jeddah, Saudi Arabia</td>
+        </tr>
+        <tr>
+            <td><img src="resources/vacation3.jpg" height="193" width="196" alt="Cancun"/></td>
+            <td>Mar 30, 2019</td>
+            <td>The view of the ocean in Cancun, Mexico</td>
+        </tr>
+        <tr>
+            <td>Copyright &#169; Mohammad Abualenain</td>
+        </tr>
+    </table>
+    
 
 </main>
 <footer>
