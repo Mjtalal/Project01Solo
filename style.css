@@ -43,14 +43,14 @@ aside {
     padding: 20px;
 }
 .sidebar {
-    width: 175px; /* Adjust width as needed */
+    width: 175px;
     background-color: #f4f4f4;
     padding: 20px;
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
-    overflow-y: auto; /* Enable scrolling if content exceeds sidebar height */
+    overflow-y: auto; 
 }
 
 .portlet {
