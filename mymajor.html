@@ -7,70 +7,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="mymajor.html">My Major</a></li>
-        <li><a href="clubs.html">Clubs</a></li>
-        <li><a href="album.html">Album</a></li>
-        <li><a href="weblinks.html">Web Links</a></li>
-    </ul>
-</nav>
+
 <header>
 
-    <img src="resources/tree.jpg" alt="Banner Image">
+
+
+    <nav>
+        <div class="logo">
+
+            <img src="resources/Logo.png" height="300" width="262"/>
+
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="mymajor.html">My Major</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+            <li><a href="album.html">Album</a></li>
+            <li><a href="weblinks.html">Web Links</a></li>
+        </ul>
+    </nav>
+    <div class="tree">
+        <img src="resources/tree.jpg" alt="Banner Image" height="496" width="1527">
+    </div>
 </header>
-<div class="sidebar">
-
-    <div class="portlet">
-        <h3>Current Date and Time</h3>
-        <p id="currentDateTime"></p>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-
-            var currentDateTimeElement = document.getElementById('currentDateTime');
-
-
-            function updateCurrentDateTime() {
-                var currentDate = new Date();
-                var formattedDateTime = currentDate.toLocaleString();
-                currentDateTimeElement.textContent = formattedDateTime;
-            }
-
-
-            updateCurrentDateTime();
-
-
-            setInterval(updateCurrentDateTime, 1000);
-        });
-    </script>
-
-    <div class="portlet">
-        <h3>Contact Form</h3>
-        <form
-                action="https://formspree.io/f/xeqykpqo"
-                method="POST"
-        >
-            <label>
-                Your email:
-                <input type="email" name="email">
-                <br>
-                <br>
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label>
-            <br>
-            <br>
-
-            <button type="submit">Send</button>
-        </form>
-    </div>
-</div>
+<div class="wrapper">
+    <main>
+        <div class="sidebar">
+            <div class="portlet">
+                <h3>Current Date and Time</h3>
+                <p id="currentDateTime"></p>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var currentDateTimeElement = document.getElementById('currentDateTime');
+                    function updateCurrentDateTime() {
+                        var currentDate = new Date();
+                        var formattedDateTime = currentDate.toLocaleString();
+                        currentDateTimeElement.textContent = formattedDateTime;
+                    }
+                    updateCurrentDateTime();
+                    setInterval(updateCurrentDateTime, 1000);
+                });
+            </script>
+            <div class="portlet">
+                <h3>Contact Form</h3>
+                <form
+                        action="https://formspree.io/f/xeqykpqo"
+                        method="POST"
+                >
+                    <label>
+                        Your email:
+                        <input type="email" name="email">
+                        <br>
+                        <br>
+                    </label>
+                    <label>
+                        Your message:
+                        <textarea name="message"></textarea>
+                    </label>
+                    <br>
+                    <br>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
 <main>
 
     <h1>My Major, Cyber Security</h1>

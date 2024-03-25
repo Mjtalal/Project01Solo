@@ -1,0 +1,22 @@
+{
+  "Interest": "Soccer",
+  "description": "I am very passionate about soccer and played semi-professionally in highschool!",
+  "resources": [
+    {
+      "name": "FC Barcelona",
+      "link": "https://www.fcbarcelona.com/en/",
+      "description": "My Favorite Spanish Club."
+    },
+    {
+      "name": "The Champions League",
+      "link": "https://www.uefa.com/uefachampionsleague/",
+      "description": "This is my favorite competition."
+    },
+    {
+      "name": "Al Ittihad FC",
+      "link": "https://ittihadclub.sa/",
+      "description": "My Saudi Hometown Team!"
+    }
+
+  ]
+}
